@@ -101,14 +101,14 @@ APF_HANDAS.bindTooltip("<b> Association des Paralysé de France </b> <br><i> Dé
     permanent : false});
     APF_HANDAS.addTo(map_work);
 
-var COMCOM_AMBERT = L.marker([44.955720,4.589722], {icon: workIcon});
+var COMCOM_AMBERT = L.marker([45.554310,3.738610], {icon: workIcon});
 COMCOM_AMBERT.bindTooltip("<b> Communauté de Communes Ambert Livradois Forez</b><br><i>Chargé de mission - 3 mois</i><br> Gestion d'un projet de revalorisation<br> des déchets verts sur 58 communes<br>par la mutualisation d'équipements", {
     className : 'line_test',
    
     permanent : false});
     COMCOM_AMBERT.addTo(map_work);
 
-var FMC = L.marker([45.554310,3.738610], {icon: workIcon});
+var FMC = L.marker([45.820162,4.589722], {icon: workIcon});
 FMC.bindTooltip("<b> Fresenius Medical Care </b> <br><i> Assitant informatique - 1 an </i> <br> Développement d'une supersion informatique.<br>Membre du service informatique en interne", {
     className : 'line_test',
    
