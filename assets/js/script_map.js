@@ -1,32 +1,36 @@
 
 // Création de cartes avec fons OSM
-var map_school = L.map('map_school');
+var map_school = L.map('map_school',{
+    minZoom: 7,
+    maxZoom:16
+  });
 
-var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+var osmUrl= 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
 
 var osmAttrib = 'Map data © OpenStreetMap Contributeur';
 
 var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib}).addTo(map_school);
 
-var map_work = L.map('map_work');
+var map_work = L.map('map_work',{
+    minZoom: 5,
+    maxZoom:16
+  });
 var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib}).addTo(map_work);
 
 // définir les paramètre de visualisation de la carte
-map_school.setView([45.49,4.47],9);
-map_work.setView([45.42, 4.47],9);
+map_school.setView([45.455,4.5],9);
+map_work.setView([45.39, 4.47],9);
 
 // icone personnaliser 
 var schoolIcon = L.icon({
     iconUrl: 'images/formation.svg',
-    iconSize: [50,50],
-    iconAnchor: [50,50],
+    iconSize: [30,30],
     popupAnchor:  [-3, -20]
 });
 
 var workIcon = L.icon({
     iconUrl: 'images/travail.svg',
-    iconSize: [50,50],
-    iconAnchor: [50,50],
+    iconSize: [25,25],
     popupAnchor:  [-3, -20]
 });
 
@@ -38,7 +42,7 @@ FIRMINY.bindTooltip("<b> 2013 - 2014 </b> <br> Baccalauréat STI2D Energie Envir
     permanent : false});
 FIRMINY.addTo(map_school);
 
-var LYON_GRATTE_CIEL = L.marker([45.730,4.85], {icon: schoolIcon});
+var LYON_GRATTE_CIEL = L.marker([45.766596,4.8853361], {icon: schoolIcon});
 LYON_GRATTE_CIEL.bindTooltip("<b> 2015 - 2016 </b> <br> Licence pro. Réseaux et Informatiques <br><br> <b> 2013 - 2015 </b> <br> DUT Génie Électrique et Informatique", {
     className : 'line_test',
    
@@ -81,12 +85,25 @@ SAINT_ETIENNE.bindTooltip("<b>Centre National de la Recherche Scientifique</b><b
     permanent : false});
 SAINT_ETIENNE.addTo(map_work);
 // COORDO
-var FESTIVAL_CHANT = L.marker([45.733341,4.834363], {icon: workIcon});
+
+var FESTIVAL_CHANT = L.marker([45.1286630,4.1266833], {icon: workIcon});
 FESTIVAL_CHANT.bindTooltip("<b>Festival Le Chant des Sucs </b> <br><i> Coordinateur du projet - 3 mois</i><br>Coordination des structures culturels afin<br>de valoriser la culture sur un territoire à l'aide <br>de partenaires locaux.", {
     className : 'line_test',
-   
     permanent : false});
     FESTIVAL_CHANT.addTo(map_work);
+    
+var AIR_PL = L.marker([47.27634258,-1.51137148], {icon: workIcon});
+AIR_PL.bindTooltip("<b>Air Pays de la Loire</b> <br><i>Ingénieur d'études environnementales - 6 mois</i><br>Développements d'indicateurs spatio-temporelles pour évaluer <br> la qualité des données et facilité la transition écologique.", {
+    className : 'line_test',
+    permanent : false});
+    AIR_PL.addTo(map_work);
+    
+var DEMIDURE = L.marker([45.733341,4.834363], {icon: workIcon});
+DEMIDURE.bindTooltip("<b>Démineur Durable</b> <br><i>Responsable développement - 3 mois</i><br>  Conception et développements d'une application cartographique, <br>visant à valoriser les données de la qualité de l'air de façon ludique.", {
+    className : 'line_test',
+    permanent : false});
+    DEMIDURE.addTo(map_work);
+    
 // COORDO
 var PERPALOUIE = L.marker([45.201860,4.039828], {icon: workIcon});
 PERPALOUIE.bindTooltip("<b> Association Perpalouïe </b> <br><i> Organisateur - 2 mois </i><br> Création de l'événement \"Choisir son assiette\" <br>pour mettre en avant les produits locaux<br>et éthiques mais aussi sensibiliser<br>aux gaspillages alimentaires", {
