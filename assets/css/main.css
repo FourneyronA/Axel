@@ -3443,16 +3443,16 @@ input, select, textarea {
 		}
 
 /* GESTION CARTO */
-#map_school {
+/* #map_school {
 	text-align : justify ;
 	float : left ;
 	width: 40%;
 	padding-left : 5%;
 	height: 350px;
 	border : 5px solid #585858 ;
-}
+} */
 
-#text_map {
+/* #text_map {
 	text-align : justify ;
 	width: 60%;
 	padding : 4%;
@@ -3460,7 +3460,7 @@ input, select, textarea {
 	line-height: 50px;
 	float : left ;
 
-}
+} */
 
 
 #map_work {

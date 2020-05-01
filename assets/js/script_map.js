@@ -1,15 +1,15 @@
 
 // Création de cartes avec fons OSM
-var map_school = L.map('map_school',{
-    minZoom: 7,
-    maxZoom:16
-  });
+// var map_school = L.map('map_school',{
+//     minZoom: 7,
+//     maxZoom:16
+//   });
 
 var osmUrl= 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
 
-var osmAttrib = 'Map data © OpenStreetMap Contributeur';
+var osmAttrib = 'Basemaps © Carto';
 
-var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib}).addTo(map_school);
+//var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib}).addTo(map_school);
 
 var map_work = L.map('map_work',{
     minZoom: 5,
@@ -18,7 +18,7 @@ var map_work = L.map('map_work',{
 var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib}).addTo(map_work);
 
 // définir les paramètre de visualisation de la carte
-map_school.setView([45.455,4.5],9);
+//map_school.setView([45.455,4.5],9);
 map_work.setView([45.39, 4.47],9);
 
 // icone personnaliser 
@@ -34,48 +34,48 @@ var workIcon = L.icon({
     popupAnchor:  [-3, -20]
 });
 
-// ajout des différentes formations 
-var FIRMINY = L.marker([45.388527,4.292290], {icon: schoolIcon});
-FIRMINY.bindTooltip("<b> 2013 - 2014 </b> <br> Baccalauréat STI2D Energie Environnement mention bien", {
-    className : 'line_test',
+// // ajout des différentes formations 
+// var FIRMINY = L.marker([45.388527,4.292290], {icon: schoolIcon});
+// FIRMINY.bindTooltip("<b> 2013 - 2014 </b> <br> Baccalauréat STI2D Energie Environnement mention bien", {
+//     className : 'line_test',
    
-    permanent : false});
-FIRMINY.addTo(map_school);
+//     permanent : false});
+// FIRMINY.addTo(map_school);
 
-var LYON_GRATTE_CIEL = L.marker([45.766596,4.8853361], {icon: schoolIcon});
-LYON_GRATTE_CIEL.bindTooltip("<b> 2015 - 2016 </b> <br> Licence pro. Réseaux et Informatiques <br><br> <b> 2013 - 2015 </b> <br> DUT Génie Électrique et Informatique", {
-    className : 'line_test',
+// var LYON_GRATTE_CIEL = L.marker([45.766596,4.8853361], {icon: schoolIcon});
+// LYON_GRATTE_CIEL.bindTooltip("<b> 2015 - 2016 </b> <br> Licence pro. Réseaux et Informatiques <br><br> <b> 2013 - 2015 </b> <br> DUT Génie Électrique et Informatique", {
+//     className : 'line_test',
    
-    permanent : false});
-LYON_GRATTE_CIEL.addTo(map_school);
+//     permanent : false});
+// LYON_GRATTE_CIEL.addTo(map_school);
 
-var YSSINGEAUX = L.marker([45.134602,4.124570], {icon: schoolIcon});
-YSSINGEAUX.bindTooltip("<b> 2016 - 2018 </b> <br> BTS Développement Animation Territoires Ruraux", {
-    className : 'line_test',
+// var YSSINGEAUX = L.marker([45.134602,4.124570], {icon: schoolIcon});
+// YSSINGEAUX.bindTooltip("<b> 2016 - 2018 </b> <br> BTS Développement Animation Territoires Ruraux", {
+//     className : 'line_test',
    
-    permanent : false});
-YSSINGEAUX.addTo(map_school);
+//     permanent : false});
+// YSSINGEAUX.addTo(map_school);
 
-var SAINT_ETIENNE = L.marker([45.426134,4.392968], {icon: schoolIcon});
-SAINT_ETIENNE.bindTooltip("<b> 2018 - 2018 </b> <br> MASTER Géographie Numérique", {
-    className : 'line_test',
+// var SAINT_ETIENNE = L.marker([45.426134,4.392968], {icon: schoolIcon});
+// SAINT_ETIENNE.bindTooltip("<b> 2018 - 2018 </b> <br> MASTER Géographie Numérique", {
+//     className : 'line_test',
    
-    permanent : false});
-SAINT_ETIENNE.addTo(map_school);
+//     permanent : false});
+// SAINT_ETIENNE.addTo(map_school);
 
-var LYON_BRON = L.marker([45.717947,4.919683], {icon: schoolIcon});
-LYON_BRON.bindTooltip("<b> 2019 - 2020 </b> <br> MASTER Géographie Numérique", {
-    className : 'line_test',
+// var LYON_BRON = L.marker([45.717947,4.919683], {icon: schoolIcon});
+// LYON_BRON.bindTooltip("<b> 2019 - 2020 </b> <br> MASTER Géographie Numérique", {
+//     className : 'line_test',
    
-    permanent : false});
-LYON_BRON.addTo(map_school); 
+//     permanent : false});
+// LYON_BRON.addTo(map_school); 
 
-var LYON_ENS = L.marker([45.733341,4.834363], {icon: schoolIcon});
-LYON_ENS.bindTooltip("<b> 2019 - 2020 </b> <br> MASTER Géographie Numérique", {
-    className : 'line_test',
+// var LYON_ENS = L.marker([45.733341,4.834363], {icon: schoolIcon});
+// LYON_ENS.bindTooltip("<b> 2019 - 2020 </b> <br> MASTER Géographie Numérique", {
+//     className : 'line_test',
    
-    permanent : false});
-LYON_ENS.addTo(map_school);
+//     permanent : false});
+// LYON_ENS.addTo(map_school);
 
 // ajout des différentes expériences 
 var SAINT_ETIENNE = L.marker([45.426134,4.392968], {icon: workIcon});
