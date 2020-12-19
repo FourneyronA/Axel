@@ -79,7 +79,7 @@ var workIcon = L.icon({
 
 // ajout des différentes expériences 
 var SAINT_ETIENNE = L.marker([45.426134,4.392968], {icon: workIcon});
-SAINT_ETIENNE.bindTooltip("<b>Centre National de la Recherche Scientifique</b><br><i> Analyste des données spatiales - 4 mois</i><br>Analyses des comportements spatiaux des <br>données de Faune France pour interpréter <br>les sciences participatives. <br><br><br> <b>OpenAgenda (Start-up dans le recensement culturel) </b><br><i>Géomaticien - 3 mois</i><br>Analyses et audit des données événementiel <br>spatiales d'OpenAgenda dans l'objectif d'aider <br>les collectivités à visualiser les événements <br>de leurs territoires", {
+SAINT_ETIENNE.bindTooltip("<b>Centre National de la Recherche Scientifique</b><br><i> Chargé d'étude en recherche - 5 mois</i><br>Collecte, traitement et analyses de données <br> pour traiter la question de la pollution lumineuse <br>  et son impact environnemental.<br><br><br> <b>Centre National de la Recherche Scientifique</b><br><i> Analyste des données spatiales - 4 mois</i><br>Analyses des comportements spatiaux des <br>données de Faune France pour interpréter <br>les sciences participatives. <br><br><br> <b>OpenAgenda (Start-up dans le recensement culturel) </b><br><i>Géomaticien - 3 mois</i><br>Analyses et audit des données événementiel <br>spatiales d'OpenAgenda dans l'objectif d'aider <br>les collectivités à visualiser les événements <br>de leurs territoires", {
     className : 'line_test',
    
     permanent : false});
