@@ -79,7 +79,7 @@ var workIcon = L.icon({
 
 // ajout des différentes expériences 
 var SAINT_ETIENNE = L.marker([45.426134,4.392968], {icon: workIcon});
-SAINT_ETIENNE.bindTooltip("<b>Centre National de la Recherche Scientifique</b><br><i> Chargé d'étude en recherche - 5 mois</i><br>Collecte, traitement et analyses de données <br> pour traiter la question de la pollution lumineuse <br>  et son impact environnemental.<br><br><br> <b>Centre National de la Recherche Scientifique</b><br><i> Analyste des données spatiales - 4 mois</i><br>Analyses des comportements spatiaux des <br>données de Faune France pour interpréter <br>les sciences participatives. <br><br><br> <b>OpenAgenda (Start-up dans le recensement culturel) </b><br><i>Géomaticien - 3 mois</i><br>Analyses et audit des données événementiel <br>spatiales d'OpenAgenda dans l'objectif d'aider <br>les collectivités à visualiser les événements <br>de leurs territoires", {
+SAINT_ETIENNE.bindTooltip("<b>Centre National de la Recherche Scientifique</b><br><i> Chargé d'étude en recherche - 5 mois</i><br>Collecte, traitement et analyses de données <br> pour traiter la question de la pollution lumineuse <br>  et son impact environnemental.<br><br><br> <b>Centre National de la Recherche Scientifique</b><br><i> Analyste des données spatiales - 4 mois</i><br>Analyses des comportements spatiaux des <br>données de Faune France pour interpréter <br>les sciences participatives. <br><br><br> <b>OpenAgenda (Start-up dans le recensement culturel) </b><br><i>Géomaticien - 3 mois</i><br>Analyses et audit des données événementielles <br>spatiales d'OpenAgenda dans l'objectif d'aider <br>les collectivités à visualiser les événements <br>de leurs territoires", {
     className : 'line_test',
    
     permanent : false});
@@ -87,13 +87,13 @@ SAINT_ETIENNE.addTo(map_work);
 // COORDO
 
 var FESTIVAL_CHANT = L.marker([45.1286630,4.1266833], {icon: workIcon});
-FESTIVAL_CHANT.bindTooltip("<b>Festival Le Chant des Sucs </b> <br><i> Coordinateur du projet - 3 mois</i><br>Coordination des structures culturels afin<br>de valoriser la culture sur un territoire à l'aide <br>de partenaires locaux.", {
+FESTIVAL_CHANT.bindTooltip("<b>Festival Le Chant des Sucs </b> <br><i> Coordinateur du projet - 3 mois</i><br>Coordination des structures culturelles afin<br>de valoriser la culture sur un territoire à l'aide <br>de partenaires locaux.", {
     className : 'line_test',
     permanent : false});
     FESTIVAL_CHANT.addTo(map_work);
     
 var AIR_PL = L.marker([47.27634258,-1.51137148], {icon: workIcon});
-AIR_PL.bindTooltip("<b>Air Pays de la Loire</b> <br><i>Ingénieur d'études environnementales - 6 mois</i><br>Développements d'indicateurs spatio-temporelles pour évaluer <br> la qualité des données et facilité la transition écologique.", {
+AIR_PL.bindTooltip("<b>Air Pays de la Loire</b> <br><i>Ingénieur d'études environnementales - 6 mois</i><br>Développement d'indicateurs spatio-temporelles pour évaluer <br> la qualité des données et facilité la transition écologique.", {
     className : 'line_test',
     permanent : false});
     AIR_PL.addTo(map_work);
@@ -113,7 +113,7 @@ PERPALOUIE.bindTooltip("<b> Association Perpalouïe </b> <br><i> Organisateur - 
     PERPALOUIE.addTo(map_work);
 
 var APF_HANDAS = L.marker([45.760602,4.883632], {icon: workIcon});
-APF_HANDAS.bindTooltip("<b> Association des Paralysé de France </b> <br><i> Développeur web - 3 mois </i> Développement d'un site web dynamique<br>et formation à la prise en main des outils informatiques", {
+APF_HANDAS.bindTooltip("<b> Association des Paralysés de France </b> <br><i> Développeur web - 3 mois </i> Développement d'un site web dynamique<br>et formation à la prise en main des outils informatiques", {
     className : 'line_test',
     permanent : false});
     APF_HANDAS.addTo(map_work);
@@ -152,84 +152,3 @@ GRECE.bindTooltip("<b>Association Filoxenia</b> <br><i>Animateur et Organisateur
    
     permanent : false});
     GRECE.addTo(map_work);
-
-
-// EXO 
-/*
-var ligne_tram = [[4.91556, 45.7221],[4.91735, 45.71945],[4.92218, 45.72033],[4.92518, 45.7184]];
-var tram = [[45.71963, 4.91796],[45.7184, 4.92518],[45.7221, 4.91556]];
-var parking = ["4.91789, 45.71875", "4.91832, 45.71894", "4.91874, 45.71792", "4.91843, 45.71766"];
-//str.replace("\"","[")
-
-
-for (var i=0; i < tram.length; i++){
-    L.marker(tram[i],  {icon: schoolIcon}).addTo(map);
-    L.circle(tram[i], 500, {color : 'pink', fillOpacity:0.5}).addTo(map);
-}
-
-for (var i=0; i < ligne_tram.length; i++){
-    L.polyline(ligne_tram[i].reverse()).addTo(map);
-}
-/*
-parking.replace("\"","[")
-for (var i=0; i < parking.length; i++){
-    L.marker(parking[i].reverse(),  {icon: schoolIcon}).addTo(map);
-}
-// ajouter une ligne 
-var line = L.polyline(ligne_tram, {color : 'blue', fillOpacity:0.5});
-line.addTo(map);
-*/
-
-
-
-
-// EXEMPLE POSSIBILITEE
-
-/*
-// ajouter un maker
-var marker = L.marker([45.7238, 4.8324]);
-marker.addTo(map);
-// map.setView([Lattitude,Longitude],Niveau de Zoom); (Niveau de zoom = )
-
-
-// ajouter un cercle avec un cercle en mètre 
-var cercle = L.circle([45.730,4.85], 500, {color : 'pink', fillOpacity:0.5});
-cercle.addTo(map);
-
-// ajouter une ligne 
-var line = L.polyline([[45.722,4.8322],[45.725,4.8322],[45.725,4.8326]], {color : 'blue', fillOpacity:0.5});
-line.bindTooltip("<b> Mes options </b> <br> et bien plus encore", {
-    className : 'line_test',
-   
-    permanent : false});
-line.addTo(map);
-
-// ajouter un polygone
-var polygone = L.polygon(
-    [[45.722,4.8321],[45.725,4.8322],[45.725,4.8325],[45.722,4.85]],
-     {color : 'red', fillOpacity:0.8});
-polygone.addTo(map);
-
-
-// ajouter un rectangle
-var polygone = L.rectangle(
-    [[45.722,4.8321],[45.725,4.8322],[45.725,4.8325]],
-     {color : 'green', fillOpacity:0.5});
-polygone.addTo(map);
-
-// ajouter un cercle avec une longeur en pixel 
-var circle_marker = L.circleMarker([45.7238, 4.8324], {
-    radius:25,
-    color : '#7c1e70',
-    weight : 0.5
-    });
-circle_marker.addTo(map);
-
-
-
-
-var maker2 = L.marker([45.730,4.85], {icon: schoolIcon});
-maker2.addTo(map);
-*/
-
-
