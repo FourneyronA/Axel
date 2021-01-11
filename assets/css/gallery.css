@@ -17,12 +17,29 @@
 .closebtn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: -40px;
   color: #333333;
-  font-size: 35px;
+  font-size: 60px;
   cursor: pointer;
 } 
-
-
-
-
+.closebtn2 {
+  position: relative;
+  bottom: -2em;
+  right: -101%;
+  color: #333333;
+  font-size: 60px;
+  cursor: pointer;
+} 
+.closebtn:hover,.closebtn2:hover {
+   transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #0ed628;
+} 
